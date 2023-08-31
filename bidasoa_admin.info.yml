@@ -1,0 +1,7 @@
+name: Administration
+type: module
+description: 'Customs administration'
+package: Bidasoa
+core_version_requirement: ^8 || ^9 || ^10
+
+

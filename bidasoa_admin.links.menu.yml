@@ -1,0 +1,25 @@
+bidasoa_admin.admin:
+  title: Bidasoa Administration
+  route_name: bidasoa.admin.index
+  description: 'Bidasoa administration'
+  parent: system.admin
+  weight: 101
+bidasoa_admin.menu_alias:
+  title: Menus
+  route_name: entity.menu.collection
+  description: 'Manage menus'
+  parent: bidasoa_admin.admin
+  weight: 2
+bidasoa_admin.department_term_admin:
+  title: Taxonomy
+  route_name: entity.taxonomy_vocabulary.collection
+  description: 'Manage taxonomy'
+  parent: bidasoa_admin.admin
+  weight: 2
+bidasoa_admin.download_data_alias:
+  title: Download Static Data
+  route_name: static_export.data_download
+  description: 'Download JSON data'
+  parent: bidasoa_admin.admin
+  weight: 3
+  route_parameters: { scheme: 'static-local' }

@@ -1,0 +1,14 @@
+.toolbar-icon-bidasoa-admin-admin:before {
+  mask-image: url(/modules/custom/bidasoa_admin/assets/biko-16x16-line.svg) !important;
+  -webkit-mask-image: url(/modules/custom/bidasoa_admin/assets/biko-16x16-line.svg) !important;
+}
+.toolbar-item-environment {
+  color: var(--gin-color-text-light) !important;
+}
+.toolbar-icon-bidasoa-admin-admin:before {
+  mask-image: url(/modules/custom/bidasoa_admin/assets/biko-16x16-line.svg) !important;
+  -webkit-mask-image: url(/modules/custom/bidasoa_admin/assets/biko-16x16-line.svg) !important;
+}
+.toolbar-item-environment {
+  color: var(--gin-color-text-light) !important;
+}

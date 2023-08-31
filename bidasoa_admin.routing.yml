@@ -1,0 +1,7 @@
+bidasoa.admin.index:
+  path: '/admin/bidasoa'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Bidasoa administration'
+  requirements:
+    _permission: 'administer bidasoa'

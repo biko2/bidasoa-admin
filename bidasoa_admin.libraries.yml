@@ -1,0 +1,16 @@
+bidasoa_admin.admin:
+  version: 1.0
+  css:
+    base:
+      css/bidasoa_admin.admin.css: {}
+bidasoa_admin.admin_production:
+  version: 1.0
+  js:
+    js/bidasoa-admin.production.js: { }
+  css:
+    base:
+      css/bidasoa_admin.admin.production.css: {}
+bidasoa_admin.admin_dev:
+  version: 1.0
+  js:
+    js/bidasoa-admin.dev.js: { }

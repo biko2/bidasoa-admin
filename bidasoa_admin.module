@@ -1,0 +1,26 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Site\Settings;
+
+function bidasoa_admin_preprocess_page(&$variables) {
+  $environment = Settings::get('bidasoa_environment', "dev");
+  $environmentMessage = Settings::get('bidasoa_environment_message', "dev");
+  $variables['#attached']['drupalSettings']['bidasoaEnvironment']['id'] = $environment;
+  $variables['#attached']['drupalSettings']['bidasoaEnvironment']['message'] = $environmentMessage;
+
+  if($variables['logged_in']){
+    $variables['#attached']['library'][] = 'bidasoa_admin/bidasoa_admin.admin';
+    if($environment === 'prod'){
+      $variables['#attached']['library'][] = 'bidasoa_admin/bidasoa_admin.admin_production';
+    } else {
+      $variables['#attached']['library'][] = 'bidasoa_admin/bidasoa_admin.admin_dev';
+    }
+  }
+}
+function bidasoa_admin_gin_content_form_routes() {
+  return [
+    'entity.taxonomy_term.edit_form'
+  ];
+}
