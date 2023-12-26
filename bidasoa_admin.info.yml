@@ -3,5 +3,9 @@ type: module
 description: 'Customs administration'
 package: Bidasoa
 core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:menu_ui
+  - drupal:taxonomy
+  - static_suite:static_export
 
 
